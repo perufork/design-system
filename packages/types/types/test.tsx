@@ -34,6 +34,14 @@ import {
   ToggleBadge,
   Truncate,
   RatingBadge,
+  Checkbox,
+  FormField,
+  Label,
+  Radio,
+  Select,
+  TextArea,
+  Input,
+  InputGroup
 } from 'pcln-types'
 import theme from '../../core/src/theme'
 import * as React from 'react'
@@ -79,6 +87,14 @@ const mySpan = <Text.span regular /> // $ExpectType Element
 const myAbsolute = <Absolute bottom={1} top={1} left={1} right={1} /> // $ExpectType Element
 const myFlex = <Flex flexDirection={['row', null, 'column']} m={3} /> // $ExpectType Element
 const myHide = <Hide xs sm md lg xl xxl m={3} /> // $ExpectType Element
+const myCheckbox = <Checkbox id="test" size={1} onChange={() => {}}/> // $ExpectType Element
+const myFormField = <FormField /> // $ExpectType Element
+const myLabel = <Label /> // $ExpectType Element
+const myRadio = <Radio /> // $ExpectType Element
+const mySelect = <Select /> // $ExpectType Element
+const myTextArea = <TextArea id='test'/> // $ExpectType Element
+const myInput = <Input id='test'/> // $ExpectType Element
+const myInputGroup = <InputGroup /> // $ExpectType Element
 // $ExpectType Element
 const myLink = (
   <Link color='secondary' variation='outline' dsRef={{ current: 'bla' }} />
